@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WellcomeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        android:rotation="180" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:paddingTop="20sp"
+        android:textSize="80sp"
+        android:textStyle="italic|bold" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_above="@id/skip_btn"
+        android:layout_alignLeft="@id/skip_btn"
+        android:layout_marginLeft="75sp"
+        android:layout_centerInParent="true"
+        android:background="#CA6F1E"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_above="@id/skip_btn"
+        android:layout_alignRight="@id/skip_btn"
+        android:layout_marginRight="75sp"
+        android:layout_centerInParent="true"
+        android:background="#CA6F1E"
+        android:text="Signup"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+    <Button
+        android:id="@+id/skip_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/black"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:layout_marginBottom="25sp"
+        />
+
+
+
+
+</RelativeLayout>

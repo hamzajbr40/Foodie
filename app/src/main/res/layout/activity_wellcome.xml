@@ -24,32 +24,6 @@
         android:paddingTop="20sp"
         android:textSize="80sp"
         android:textStyle="italic|bold" />
-
-    <Button
-        android:id="@+id/login_btn"
-        android:layout_width="150sp"
-        android:layout_height="50sp"
-        android:layout_above="@id/skip_btn"
-        android:layout_alignLeft="@id/skip_btn"
-        android:layout_marginLeft="75sp"
-        android:layout_centerInParent="true"
-        android:background="#CA6F1E"
-        android:text="Login"
-        android:textColor="@android:color/white"
-        android:textSize="30sp" />
-
-    <Button
-        android:id="@+id/signup_btn"
-        android:layout_width="150sp"
-        android:layout_height="50sp"
-        android:layout_above="@id/skip_btn"
-        android:layout_alignRight="@id/skip_btn"
-        android:layout_marginRight="75sp"
-        android:layout_centerInParent="true"
-        android:background="#CA6F1E"
-        android:text="Signup"
-        android:textColor="@android:color/white"
-        android:textSize="30sp" />
     <Button
         android:id="@+id/skip_btn"
         android:layout_width="wrap_content"
@@ -62,6 +36,32 @@
         android:textSize="30sp"
         android:layout_marginBottom="25sp"
         />
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="130sp"
+        android:layout_height="50sp"
+        android:layout_above="@id/skip_btn"
+        android:layout_alignLeft="@id/skip_btn"
+        android:layout_marginLeft="75sp"
+        android:layout_centerInParent="true"
+        android:background="#CA6F1E"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="130sp"
+        android:layout_height="50sp"
+        android:layout_above="@id/skip_btn"
+        android:layout_alignRight="@id/skip_btn"
+        android:layout_marginRight="75sp"
+        android:layout_centerInParent="true"
+        android:background="#CA6F1E"
+        android:text="Sign up"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
 
 
 

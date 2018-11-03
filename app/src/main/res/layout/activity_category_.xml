@@ -9,7 +9,7 @@
     >
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150sp">
+        android:layout_height="130sp">
     <Button
         android:text="Desserts"
         android:textSize="25dp"
@@ -34,7 +34,7 @@
         android:layout_weight="1"/></LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150sp">
+        android:layout_height="130sp">
     <Button
         android:text="Jams"
         android:textSize="25dp"
@@ -59,7 +59,7 @@
         android:layout_weight="1" /></LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150sp">
+        android:layout_height="130sp">
     <Button
         android:text="Pastries"
         android:textSize="25dp"
@@ -82,30 +82,33 @@
         android:layout_height="match_parent"
         android:layout_margin="5dp"
         android:layout_weight="1"/></LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150sp">
+        android:layout_height="130sp">
+
         <Button
-            android:text="Salads"
-            android:textSize="25dp"
-            android:textColor="@android:color/white"
-            android:fontFamily="casual"
-            android:textStyle="bold|italic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
             android:background="#9ca400"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="5dp"
-            android:layout_weight="1"/>
-        <Button
-            android:text="Diaries"
-            android:textSize="25dp"
-            android:textColor="@android:color/white"
             android:fontFamily="casual"
-            android:textStyle="bold|italic"
-            android:background="#004ea1"
+            android:text="Salads"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold|italic" />
+
+        <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:background="#004ea1"
+            android:fontFamily="casual"
+            android:text="Diaries"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold|italic" />
     </LinearLayout>
 </LinearLayout>

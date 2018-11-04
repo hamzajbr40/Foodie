@@ -15,11 +15,12 @@
         android:layout_height="150sp">
 
         <Button
+            android:id="@+id/dessert_btn"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:background="#ff0077"
+            android:background="#6f00ff"
             android:fontFamily="casual"
             android:text="Desserts"
             android:textColor="@android:color/white"
@@ -27,11 +28,12 @@
             android:textStyle="bold|italic" />
 
         <Button
+            android:id="@+id/mdishes_btn"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:background="#0bc75b"
+            android:background="#6f00ff"
             android:fontFamily="casual"
             android:text="Main Dishes"
             android:textColor="@android:color/white"
@@ -44,11 +46,12 @@
         android:layout_height="150sp">
 
         <Button
+            android:id="@+id/jams_btn"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:background="#6544de"
+            android:background="#4c00ff"
             android:fontFamily="casual"
             android:text="Jams"
             android:textColor="@android:color/white"
@@ -56,11 +59,12 @@
             android:textStyle="bold|italic" />
 
         <Button
+            android:id="@+id/pickles_btn"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:background="#117A65"
+            android:background="#FF4C00FF"
             android:fontFamily="casual"
             android:text="Pickles"
             android:textColor="@android:color/white"
@@ -73,11 +77,12 @@
         android:layout_height="150sp">
 
         <Button
+            android:id="@+id/pastries_btn"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:background="#b95715"
+            android:background="#0051ff"
             android:fontFamily="casual"
             android:text="Pastries"
             android:textColor="@android:color/white"
@@ -85,11 +90,12 @@
             android:textStyle="bold|italic" />
 
         <Button
+            android:id="@+id/appetizers_id"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:background="#8E44AD"
+            android:background="#FF0051FF"
             android:fontFamily="casual"
             android:text="Appetizers"
             android:textColor="@android:color/white"
@@ -102,11 +108,12 @@
         android:layout_height="150sp">
 
         <Button
+            android:id="@+id/salads_btn"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:background="#9ca400"
+            android:background="#0090ff"
             android:fontFamily="casual"
             android:text="Salads"
             android:textColor="@android:color/white"
@@ -114,11 +121,12 @@
             android:textStyle="bold|italic" />
 
         <Button
+            android:id="@+id/diaries_btn"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_margin="5sp"
             android:layout_weight="1"
-            android:background="#004ea1"
+            android:background="#0090ff"
             android:fontFamily="casual"
             android:text="Diaries"
             android:textColor="@android:color/white"

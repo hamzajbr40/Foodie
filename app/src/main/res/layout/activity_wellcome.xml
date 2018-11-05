@@ -62,7 +62,8 @@
         android:background="#CA6F1E"
         android:text="Sign up"
         android:textColor="@android:color/white"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        android:onClick="signUp"/>
 
 
 

@@ -18,6 +18,7 @@ public class WellcomeActivity extends Activity {
 
         Button skipButton = (Button) findViewById(R.id.skip_btn);
         Button loginButton = (Button) findViewById(R.id.login_Activity_btn);
+        Button signUpButton = (Button) findViewById(R.id.signup_btn);
 
     }
 
@@ -27,6 +28,10 @@ public class WellcomeActivity extends Activity {
     }
     public void skip(View view) {
         intent = new Intent(this, Category_Activity.class);
+        startActivity(intent);
+    }
+    public void signUp(View view) {
+        intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
     }
 }

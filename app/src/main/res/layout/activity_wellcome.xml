@@ -35,6 +35,7 @@
         android:layout_alignParentBottom="true"
         android:textSize="30sp"
         android:layout_marginBottom="25sp"
+        android:onClick="skip"
         />
     <Button
         android:id="@+id/login_Activity_btn"
@@ -47,7 +48,8 @@
         android:background="#CA6F1E"
         android:text="Login"
         android:textColor="@android:color/white"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        android:onClick="login"/>
 
     <Button
         android:id="@+id/signup_btn"

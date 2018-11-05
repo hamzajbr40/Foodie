@@ -10,23 +10,23 @@ import android.widget.Button;
 public class WellcomeActivity extends Activity {
 
     private Button button;
-
+    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wellcome);
 
-        button = (Button) findViewById(R.id.skip_btn);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openCategoryActivity();
-            }
-        });
+        Button skipButton = (Button) findViewById(R.id.skip_btn);
+        Button loginButton = (Button) findViewById(R.id.login_Activity_btn);
+
     }
 
-    public void openCategoryActivity() {
-        Intent intent = new Intent(this, Category_Activity.class);
+    public void login(View view){
+        intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+    public void skip(View view) {
+        intent = new Intent(this, Category_Activity.class);
         startActivity(intent);
     }
 }

@@ -8,14 +8,15 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/Text1"
+        android:id="@+id/search_bar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
 
     <ListView
         android:id="@+id/List1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </ListView>
+        android:layout_height="wrap_content"/>
+
 
 </LinearLayout>

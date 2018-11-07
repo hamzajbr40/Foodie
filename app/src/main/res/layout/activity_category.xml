@@ -23,6 +23,7 @@
             android:background="#6f00ff"
             android:fontFamily="casual"
             android:text="Desserts"
+            android:onClick="List"
             android:textColor="@android:color/white"
             android:textSize="22sp"
             android:textStyle="bold|italic" />
@@ -36,6 +37,7 @@
             android:background="#6f00ff"
             android:fontFamily="casual"
             android:text="Main Dishes"
+            android:onClick="List"
             android:textColor="@android:color/white"
             android:textSize="22sp"
             android:textStyle="bold|italic" />
@@ -54,6 +56,7 @@
             android:background="#4c00ff"
             android:fontFamily="casual"
             android:text="Jams"
+            android:onClick="List"
             android:textColor="@android:color/white"
             android:textSize="22sp"
             android:textStyle="bold|italic" />
@@ -67,6 +70,7 @@
             android:background="#FF4C00FF"
             android:fontFamily="casual"
             android:text="Pickles"
+            android:onClick="List"
             android:textColor="@android:color/white"
             android:textSize="22sp"
             android:textStyle="bold|italic" />
@@ -85,6 +89,7 @@
             android:background="#0051ff"
             android:fontFamily="casual"
             android:text="Pastries"
+            android:onClick="List"
             android:textColor="@android:color/white"
             android:textSize="22sp"
             android:textStyle="bold|italic" />
@@ -98,6 +103,7 @@
             android:background="#FF0051FF"
             android:fontFamily="casual"
             android:text="Appetizers"
+            android:onClick="List"
             android:textColor="@android:color/white"
             android:textSize="22sp"
             android:textStyle="bold|italic" />
@@ -116,19 +122,21 @@
             android:background="#0090ff"
             android:fontFamily="casual"
             android:text="Salads"
+            android:onClick="List"
             android:textColor="@android:color/white"
             android:textSize="22sp"
             android:textStyle="bold|italic" />
 
         <Button
-            android:id="@+id/diaries_btn"
+            android:id="@+id/dairy_btn"
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_margin="5sp"
             android:layout_weight="1"
             android:background="#0090ff"
             android:fontFamily="casual"
-            android:text="Diaries"
+            android:text="Dairy"
+            android:onClick="List"
             android:textColor="@android:color/white"
             android:textSize="22sp"
             android:textStyle="bold|italic" />

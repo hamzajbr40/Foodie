@@ -15,13 +15,10 @@ public class WellcomeActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wellcome);
-
         Button skipButton = (Button) findViewById(R.id.skip_btn);
         Button loginButton = (Button) findViewById(R.id.login_Activity_btn);
         Button signUpButton = (Button) findViewById(R.id.signup_btn);
-
     }
-
     public void login(View view){
         intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
@@ -34,4 +31,5 @@ public class WellcomeActivity extends Activity {
         intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
     }
+
 }

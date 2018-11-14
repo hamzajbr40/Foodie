@@ -25,22 +25,27 @@ public class Category_Activity extends AppCompatActivity {
 
     public void List(View view) {
         intent = new Intent(this, List_Activity.class);
-        if(view.getId()==R.id.jams_btn){
-            intent.putExtra("list",jams.getText().toString());
-        }else if(view.getId()==R.id.appetizers_id){
-            intent.putExtra("list",appitizers.getText().toString());
-        }else if(view.getId()==R.id.pickles_btn){
-            intent.putExtra("list",pickles.getText().toString());
-        }else if(view.getId()==R.id.dessert_btn){
-            intent.putExtra("list",desserts.getText().toString());
-        }else if(view.getId()==R.id.pastries_btn){
-            intent.putExtra("list",pastries.getText().toString());
-        }else if(view.getId()==R.id.salads_btn){
-            intent.putExtra("list",salads.getText().toString());
-        }else if(view.getId()==R.id.dairy_btn){
-            intent.putExtra("list",dairy.getText().toString());
-        }else if(view.getId()==R.id.mdishes_btn){
-            intent.putExtra("list",mDishes.getText().toString());
+
+        switch (view.getId()) {
+
+            case (R.id.jams_btn):
+                {
+                intent.putExtra("list", jams.getText().toString());
+            }case(R.id.appetizers_id): {
+                intent.putExtra("list", appitizers.getText().toString());
+            }case (R.id.pickles_btn): {
+                intent.putExtra("list", pickles.getText().toString());
+            }case (R.id.dessert_btn): {
+                intent.putExtra("list", desserts.getText().toString());
+            }case (R.id.pastries_btn): {
+                intent.putExtra("list", pastries.getText().toString());
+            } case (R.id.salads_btn): {
+                intent.putExtra("list", salads.getText().toString());
+            }case (R.id.dairy_btn): {
+                intent.putExtra("list", dairy.getText().toString());
+            }case  (R.id.mdishes_btn): {
+                intent.putExtra("list", mDishes.getText().toString());
+            }
         }
         startActivity(intent);
     }

@@ -43,9 +43,9 @@ public class List_Activity extends AppCompatActivity {
         String listName = getIntent().getStringExtra("list");
         ListView listView = (ListView)findViewById(R.id.List1);
 
+        switch (listName){
 
-
-        if(listName.equals("Desserts"))
+            case ("Desserts"):
         {
             adapter=new ArrayAdapter<>(
                     this,
@@ -53,7 +53,7 @@ public class List_Activity extends AppCompatActivity {
                     desserts
             );
         }
-        else if(listName.equals("Main Dishes"))
+            case ("Main Dishes"):
         {
             adapter=new ArrayAdapter<>(
                     this,
@@ -61,7 +61,7 @@ public class List_Activity extends AppCompatActivity {
                     mDishes
             );
         }
-        else if(listName.equals("Jams"))
+            case ("Jams"):
         {
             adapter=new ArrayAdapter<>(
                     this,
@@ -69,7 +69,7 @@ public class List_Activity extends AppCompatActivity {
                     jams
             );
         }
-        else if(listName.equals("Pickles"))
+            case ("Pickles"):
         {
             adapter=new ArrayAdapter<>(
                     this,
@@ -77,7 +77,7 @@ public class List_Activity extends AppCompatActivity {
                     pickles
             );
         }
-        else if(listName.equals("Pastries"))
+            case ("Pastries"):
         {
             adapter=new ArrayAdapter<>(
                     this,
@@ -85,7 +85,7 @@ public class List_Activity extends AppCompatActivity {
                     pastries
             );
         }
-        else if(listName.equals("Appetizers"))
+            case ("Appetizers"):
         {
             adapter=new ArrayAdapter<>(
                     this,
@@ -93,7 +93,7 @@ public class List_Activity extends AppCompatActivity {
                     appitizers
             );
         }
-        else if(listName.equals("Salads"))
+            case ("Salads"):
         {
             adapter=new ArrayAdapter<>(
                     this,
@@ -101,13 +101,14 @@ public class List_Activity extends AppCompatActivity {
                     salads
             );
         }
-        else if(listName.equals("Dairy"))
+            case ("Dairy"):
         {
             adapter=new ArrayAdapter<String>(
                     this,
                     android.R.layout.simple_list_item_1,
                     dairy
             );
+        }
         }
         listView.setAdapter(adapter);
 

@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class WellcomeActivity extends Activity {
 
-    private Button button;
+  //  private Button button;
     Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

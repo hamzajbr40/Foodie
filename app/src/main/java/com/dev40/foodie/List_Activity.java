@@ -45,69 +45,77 @@ public class List_Activity extends AppCompatActivity {
 
         switch (listName){
 
-            case ("Desserts"):
+            case "Desserts":
         {
             adapter=new ArrayAdapter<>(
                     this,
                     android.R.layout.simple_list_item_1,
                     desserts
             );
+            break;
         }
-            case ("Main Dishes"):
+            case "Main Dishes":
         {
             adapter=new ArrayAdapter<>(
                     this,
                     android.R.layout.simple_list_item_1,
                     mDishes
             );
+            break;
         }
-            case ("Jams"):
+            case "Jams":
         {
             adapter=new ArrayAdapter<>(
                     this,
                     android.R.layout.simple_list_item_1,
                     jams
             );
+            break;
         }
-            case ("Pickles"):
+            case "Pickles":
         {
             adapter=new ArrayAdapter<>(
                     this,
                     android.R.layout.simple_list_item_1,
                     pickles
             );
+            break;
         }
-            case ("Pastries"):
+            case "Pastries":
         {
             adapter=new ArrayAdapter<>(
                     this,
                     android.R.layout.simple_list_item_1,
                     pastries
             );
+            break;
         }
-            case ("Appetizers"):
+            case "Appetizers":
         {
             adapter=new ArrayAdapter<>(
                     this,
                     android.R.layout.simple_list_item_1,
                     appitizers
             );
+            break;
         }
-            case ("Salads"):
+            case "Salads":
         {
             adapter=new ArrayAdapter<>(
                     this,
                     android.R.layout.simple_list_item_1,
                     salads
             );
+            break;
         }
-            case ("Dairy"):
+            case "Dairy":
         {
             adapter=new ArrayAdapter<String>(
                     this,
                     android.R.layout.simple_list_item_1,
                     dairy
             );
+            break;
         }
         }
         listView.setAdapter(adapter);

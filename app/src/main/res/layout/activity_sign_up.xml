@@ -25,11 +25,11 @@
             android:textSize="20dp"
 
             />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="First Name:"
-        android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name:"
+            android:textSize="20dp"/>
 
     <EditText
         android:id="@+id/firstName"

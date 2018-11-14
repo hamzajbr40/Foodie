@@ -28,9 +28,9 @@ public class List_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
         setContentView(R.layout.activity_list);
+
+
         jams = new ArrayList<>();
         appitizers = new ArrayList<>();
         pickles = new ArrayList<>();
@@ -110,8 +110,8 @@ public class List_Activity extends AppCompatActivity {
             );
         }
         listView.setAdapter(adapter);
-        EditText search = (EditText)findViewById(R.id.search_bar);
 
+        EditText search = (EditText)findViewById(R.id.search_bar);
 
         search.addTextChangedListener(new TextWatcher() {
             @Override

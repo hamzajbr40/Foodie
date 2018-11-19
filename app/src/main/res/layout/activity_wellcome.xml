@@ -24,19 +24,15 @@
         android:paddingTop="20sp"
         android:textSize="80sp"
         android:textStyle="italic|bold" />
-    <Button
+    <TextView
         android:id="@+id/skip_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Skip"
-        android:background="@android:color/transparent"
-        android:textColor="@android:color/black"
-        android:shadowColor="@android:color/black"
+        android:text="SWIPE LEFT TO SKIP"
+        android:textColor="@android:color/white"
         android:layout_centerInParent="true"
         android:layout_alignParentBottom="true"
-        android:textSize="30sp"
-        android:layout_marginBottom="25sp"
-        android:onClick="skip"
+        android:layout_margin="25sp"
         />
     <Button
         android:id="@+id/login_Activity_btn"

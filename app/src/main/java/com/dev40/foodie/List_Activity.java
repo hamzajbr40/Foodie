@@ -3,7 +3,6 @@ package com.dev40.foodie;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
 import android.widget.TextView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -136,11 +135,7 @@ public class List_Activity extends AppCompatActivity {
 
             }
         });
-
-
-
     }
-
     protected void getLists(){
 
         appitizers.add("Mac & Cheese Balls");

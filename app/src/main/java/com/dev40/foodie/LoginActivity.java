@@ -1,5 +1,7 @@
 package com.dev40.foodie;
 
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,5 +17,10 @@ public class LoginActivity extends AppCompatActivity {
 
     public void login(View view) {
         Toast.makeText(this,"Coming Soon", Toast.LENGTH_LONG).show();
+    }
+
+    public void signUp(View view) {
+        Intent intent = new Intent(this, SignUpActivity.class);
+        startActivity(intent);
     }
 }

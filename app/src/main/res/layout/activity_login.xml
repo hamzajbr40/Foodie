@@ -48,4 +48,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="login"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="signUp"
+        android:background="@android:color/transparent"
+        android:text="Creat a New Account"/>
 </LinearLayout>

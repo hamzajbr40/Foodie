@@ -14,7 +14,6 @@
         android:inputType="text"
         android:hint="Search"
         />
-
     <ListView
         android:id="@+id/List1"
         android:layout_width="match_parent"

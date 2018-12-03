@@ -58,7 +58,7 @@
         android:id="@+id/emailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="someone@foodie.com" />
+        android:hint="someone@your_domain.com" />
 
     <TextView
         android:layout_width="wrap_content"

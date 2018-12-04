@@ -114,7 +114,7 @@ public class List_Activity extends AppCompatActivity {
                 List_Activity.this.customAdaptor.getFilter().filter(s);
             }
 
-w
+
             @Override
             public void afterTextChanged(Editable s) {
 

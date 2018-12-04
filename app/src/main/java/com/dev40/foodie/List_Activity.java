@@ -49,6 +49,7 @@ public class List_Activity extends AppCompatActivity {
         String listName = getIntent().getStringExtra("list");
         ListView listView = (ListView)findViewById(R.id.List1);
 
+        //getting the name of the clicked button on the previous layout and pass its arrayLists to the customAdaptor constructor
         switch (listName){
 
             case "Desserts":
@@ -114,13 +115,14 @@ public class List_Activity extends AppCompatActivity {
                 List_Activity.this.customAdaptor.getFilter().filter(s);
             }
 
-w
+
             @Override
             public void afterTextChanged(Editable s) {
 
             }
         });
     }
+    //filling the arrayLists with predefined items
     protected void getLists(){
         //appetizers names
         appetizers.add("Mac & Cheese Balls");

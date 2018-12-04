@@ -20,7 +20,7 @@ public class WellcomeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wellcome);
 
-        gestureObject = new GestureDetectorCompat(this,new LearnGesture());
+        gestureObject = new GestureDetectorCompat(this,new LearnGesture());  // a interact between the user and the screen ex: swip the screen
         //here learnGesture is class file
 
         Button loginButton = (Button) findViewById(R.id.login_Activity_btn);
@@ -28,6 +28,7 @@ public class WellcomeActivity extends Activity {
     }
     public void login(View view){
         intent = new Intent(this, LoginActivity.class);
+        // a connection between 2 activities
         startActivity(intent);
     }
     public void signUp(View view) {
@@ -42,8 +43,18 @@ public class WellcomeActivity extends Activity {
     }
 
     class LearnGesture extends GestureDetector.SimpleOnGestureListener{
+        // A convenience class to extend when you only want to listen for a subset of all the gestures
         @Override
         public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+
+        //onFling: is that the user lifts his finger in the end of the movement (that is the reason for what onFling is called one time).
+        /*      e1 	MotionEvent: The first down motion event that started the fling.
+
+                e2 	MotionEvent: The move motion event that triggered the current onFling.
+
+                velocityX 	float: The velocity of this fling measured in pixels per second along the x axis.
+
+                velocityY 	float: The velocity of this fling measured in pixels per second along the y axis. */
 
              if (e2.getX()<e1.getX()){
                 Intent intent = new Intent(WellcomeActivity.this,Category_Activity.class);

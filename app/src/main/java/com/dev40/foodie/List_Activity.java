@@ -114,8 +114,7 @@ public class List_Activity extends AppCompatActivity {
                 List_Activity.this.customAdaptor.getFilter().filter(s);
             }
 
-            /*you have to change something above this line to activate the searchBar */
-
+w
             @Override
             public void afterTextChanged(Editable s) {
 

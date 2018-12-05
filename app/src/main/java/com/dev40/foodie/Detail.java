@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Detail extends AppCompatActivity {
@@ -17,6 +19,13 @@ public class Detail extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
+        String t = getIntent().getStringExtra("text");
+        TextView title =(TextView)findViewById(R.id.titleID);
+        title.setText(t);
+        int img = getIntent().getIntExtra("img",0);
+        ImageView imageView = findViewById(R.id.detailPic);
+        imageView.setImageResource(img);
 
         Button plus1 = (Button) findViewById(R.id.plus);
         Button minus1 = (Button) findViewById(R.id.minus);

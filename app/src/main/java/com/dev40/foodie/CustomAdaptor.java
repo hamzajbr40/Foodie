@@ -31,7 +31,7 @@ class CustomAdaptor extends ArrayAdapter<String> {
         TextView textView = (TextView) convertView.findViewById(R.id.cATV);
         ImageView imageView = (ImageView) convertView.findViewById(R.id.cAIV);
         textView.setText(myAdaptedNamesArrayList.get(position));
-        imageView.setBackgroundResource(myAdaptedPicsArrayList.get(position));
+        imageView.setImageResource(myAdaptedPicsArrayList.get(position));
         return convertView;
     }
 }

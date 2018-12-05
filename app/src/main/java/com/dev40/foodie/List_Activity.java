@@ -3,8 +3,11 @@ package com.dev40.foodie;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.Context;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -26,6 +29,14 @@ List_Activity extends AppCompatActivity {
     ArrayList<String> jams, appetizers,pickles,desserts,pastries,salads,dairy,mDishes,temp;
     ArrayList<Integer> jamsPics, appetizersPics, picklesPics, dessertsPics, pastriesPics, saladsPics, dairyPics, mDishesPics,tempnum;
     ArrayAdapter<String> adapter;
+
+
+    private DrawerLayout drawerLayout;
+    private ActionBarDrawerToggle toggle;
+    private Toolbar toolbar;
+
+
+
 
     CustomAdaptor customAdaptor;
 
@@ -53,6 +64,7 @@ List_Activity extends AppCompatActivity {
         getLists();
         String listName = getIntent().getStringExtra("list");
         listView = (ListView)findViewById(R.id.List1);
+
 
         //getting the name of the clicked button on the previous layout and pass its arrayLists to the customAdaptor constructor
         switch (listName){

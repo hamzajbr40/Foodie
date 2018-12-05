@@ -12,12 +12,13 @@
         android:src="@drawable/flower"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:scaleType="centerCrop"
         android:layout_weight="1"
         />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="2"
         android:layout_margin="10dp">
 
         <View
@@ -62,9 +63,10 @@
     <Button
         android:id="@+id/plus"
         android:text="+"
+        android:textColor="@android:color/white"
         android:layout_marginBottom="10sp"
         android:layout_alignParentBottom="true"
-        android:background="#c0ccf1"
+        android:background="#388e3c"
         android:layout_width="40sp"
         android:layout_height="40sp"
         android:onClick="Plus"/>
@@ -72,10 +74,11 @@
     <Button
         android:id="@+id/minus"
         android:text="-"
+        android:textColor="@android:color/white"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="10sp"
         android:layout_toRightOf="@id/quantity"
-        android:background="#c0ccf1"
+        android:background="@color/button"
         android:layout_width="40sp"
         android:layout_height="40sp"
         android:onClick="Minus"/>
@@ -93,10 +96,11 @@
     <Button
         android:id="@+id/AddToCart"
         android:text="Add to cart"
+        android:textColor="@android:color/white"
         android:layout_alignParentBottom="true"
-        android:background="#c0ccf1"
+        android:background="@color/button"
         android:layout_marginBottom="10sp"
-        android:layout_marginLeft="175sp"
+        android:layout_alignParentRight="true"
         android:layout_width="200sp"
         android:layout_height="40sp"
         android:onClick="AddTo"/>
